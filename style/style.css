@@ -1,0 +1,89 @@
+#container {
+  padding-top: 20px;
+  background-color: #f2f2f2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+}
+
+#header img {
+  width: 100%;
+  border-radius: 50%;
+}
+#header .logo span {
+  font-size: 13px;
+  font-weight: bold;
+}
+#header .logo p {
+  font-size: 8px;
+  color: lightgrey;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #f2f2f2;
+  opacity: 1; /* Firefox */
+}
+#header input {
+  width: 100%;
+  margin-top: 5px;
+  border-color: white;
+  border: none;
+  /* border-bottom: lightgray; */
+  /* border-bottom: 0px; */
+  box-shadow: 1pz;
+  border-bottom: 2px solid lightgray;
+  padding: 5px 20px;
+  color: #f2f2f2;
+}
+#header .input-box img {
+  width: 16px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+/* header */
+
+#container .icons i {
+  margin: 0px 20px;
+}
+#content .files_folder {
+  margin-top: 20px;
+}
+#content .files_folder ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#content .files_folder ul li img {
+  width: 80%;
+}
+#content .files_folder ul li {
+  margin: 0px 50px 50px 0px;
+  list-style: none;
+  background-color: white;
+}
+#content .files_folder ul li .image {
+  border: 1px solid lightgrey;
+  text-align: center;
+
+  padding: 14px;
+}
+#content .files_folder ul li .description {
+  border: 1px solid lightgrey;
+  padding: 7px;
+  text-align: center;
+}
+#content .files_folder ul li span {
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
+}
+#content .files_folder ul li p {
+  font-size: 10px;
+  color: lightgray;
+}
+$:hover {
+  text-decoration: none;
+}

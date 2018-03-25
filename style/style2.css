@@ -1,0 +1,34 @@
+#inside-folder .file-image img {
+  width: 100%;
+}
+#inside-folder .files {
+  margin-top: 20px;
+}
+#inside-folder .files ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#inside-folder .files ul li {
+  background-color: white;
+  list-style: none;
+}
+#inside-folder .file-image {
+  border: 1px solid lightgrey;
+  text-align: center;
+
+  padding: 17px;
+}
+#inside-folder .file-description {
+  border: 1px solid lightgrey;
+  padding: 10px;
+  text-align: center;
+}
+#inside-folder .files ul li span {
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
+}
+#inside-folder .files ul li p {
+  font-size: 10px;
+  color: lightgray;
+}

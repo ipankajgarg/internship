@@ -1,0 +1,87 @@
+export default [
+  {
+    "id":"1",
+    "folderName": "Folder name",
+    "quantity": "5 items",
+    "type": "folder"
+  },
+  {
+    "id":"2",
+    "folderName": "Folder name",
+    "quantity": "5 items",
+    "type": "folder"
+  },
+  {
+      "id":"3",
+    "fileName": "Filename.zip",
+    "quantity": "5 items",
+    "type": "zipFile"
+  },
+  {
+      "id":"4",
+    "folderName": "Folder name",
+    "quantity": "5 items",
+    "type": "folder"
+  },
+  {
+      "id":"5",
+    "folderName": "Folder name",
+    "quantity": "5 items",
+    "type": "folder"
+  },
+  {
+      "id":"6",
+    "folderName": "Folder name",
+    "quantity": "5 items",
+    "type": "folder"
+  },
+  {
+      "id":"7",
+    "fileName": "Filename.zip",
+    "quantity": "5 items",
+    "type": "zipFile"
+  },
+  {
+      "id":"8",
+    "folderName": "Folder name",
+    "quantity": "5 items",
+    "type": "folder"
+  },
+  {
+      "id":"9",
+    "folderName": "Folder name",
+    "quantity": "5 items",
+    "type": "folder"
+  },
+
+  {
+      "id":"10",
+    "folderName": "Folder name",
+    "quantity": "5 items",
+    "type": "folder"
+  },
+  {
+      "id":"11",
+    "folderName": "Folder name",
+    "quantity": "5 items",
+    "type": "folder"
+  },
+  {
+      "id":"12",
+    "folderName": "Folder name",
+    "quantity": "5 items",
+    "type": "folder"
+  },
+  {
+      "id":"13",
+    "folderName": "Folder name",
+    "quantity": "5 items",
+    "type": "folder"
+  },
+  {
+      "id":"14",
+    "fileName": "Filename.zip",
+    "quantity": "5 items",
+    "type": "zipFile"
+  }
+]
