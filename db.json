@@ -3,52 +3,56 @@
     {
       "content": "this is my first card",
       "title": "Internship stuff",
-      "id": 4
+      "id": "4"
     },
     {
       "title": "Internship stuff",
       "content": "Its a cold night",
-      "id": 5
+      "id": "5"
     },
     {
       "title": "Internship stuff",
       "content": "yoghurt on my table",
-      "id": 6
+      "id": "6"
     },
     {
       "title": "Internship stuff",
       "content": "attention song",
-      "id": 7
+      "id": "7"
     },
     {
       "title": "Internship stuff",
       "content": "vdf",
-      "id": 8
+      "id": "8"
     }
   ],
   "users": [
     {
       "id": "1",
       "name": "john cena",
-      "imageURL": "https://pbs.twimg.com/profile_images/687348710032957440/TEp6n0JN_400x400.png",
+      "imageURL":
+        "https://pbs.twimg.com/profile_images/687348710032957440/TEp6n0JN_400x400.png",
       "selected": "false"
     },
     {
       "id": "2",
       "name": "taylor swift",
-      "imageURL": "https://pbs.twimg.com/profile_images/713141309733646336/Yi8SGSW9_400x400.jpg",
-      "selected": "true"
+      "imageURL":
+        "https://pbs.twimg.com/profile_images/713141309733646336/Yi8SGSW9_400x400.jpg",
+      "selected": "false"
     },
     {
       "id": "3",
       "name": "emma watson",
-      "imageURL": "https://pbs.twimg.com/profile_images/588391447688192001/n87QmCZW_400x400.jpg",
+      "imageURL":
+        "https://pbs.twimg.com/profile_images/588391447688192001/n87QmCZW_400x400.jpg",
       "selected": "true"
     },
     {
       "id": "3",
       "name": "charlie puth",
-      "imageURL": "https://c-sf.smule.com/sf/s32/sing/performance/cover/25/19/89da06e3-7c4c-49c7-9b4c-c775034efdb8.jpg",
+      "imageURL":
+        "https://c-sf.smule.com/sf/s32/sing/performance/cover/25/19/89da06e3-7c4c-49c7-9b4c-c775034efdb8.jpg",
       "selected": "true"
     }
   ]

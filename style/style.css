@@ -16,14 +16,38 @@ ul {
   display: flex;
   list-style: none;
 }
-#header li img {
+#header .icons li img {
   width: 100%;
   border-radius: 50%;
 }
-#header li {
+#header .icons li {
   width: 10%;
   margin: 0px 10px;
   display: inline-block;
+}
+#header .userlist ul {
+  padding: 0px;
+}
+
+#header .userlist {
+  position: absolute;
+  border: 1px solid lightgray;
+  margin-top: 5px;
+  width: 204px;
+  background-color: white;
+  height: 115px;
+  overflow-y: scroll;
+}
+#header .userlist li {
+  width: 100%;
+  margin: 5px 0px;
+}
+#header .userlist li img {
+  width: 15%;
+  margin: 0px 10px;
+}
+#header .userlist li span {
+  font-size: 12px;
 }
 #header .show_hide {
   position: absolute;
@@ -46,6 +70,7 @@ ul {
   border: 1px solid red;
   text-align: center;
 }
+
 #content ul li span {
   font-size: 12px;
 }

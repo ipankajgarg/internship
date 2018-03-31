@@ -41,3 +41,17 @@ export function addedUser() {
       });
   };
 }
+// export function allUser() {
+//   return function(dispatch) {
+//     axios
+//       .get("http://localhost:3000/users")
+//       .then(response => {
+//         console.log("response", response);
+//         dispatch({ type: "LOGGED", payload: response });
+//       })
+//       .catch(() => {
+//         //if brand//show an error to the user
+//         console.log("auth");
+//       });
+//   };
+// }
