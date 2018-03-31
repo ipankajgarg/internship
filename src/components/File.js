@@ -6,7 +6,15 @@ class File extends Component {
       <div id="file" style={{ marginTop: "10px" }}>
         <div className="container">
           <Arrows styleLeft="black" styleRight="gray" left="/folder" />
-          <div className="row">
+
+          <div
+            className="row"
+            style={{
+              padding: "30px",
+              marginTop: "30px",
+              backgroundColor: "white"
+            }}
+          >
             <div className="col-sm-4">
               React (also React.js or ReactJS) is a JavaScript library for
               building user interfaces developed by Facebook & Instagram. It is
@@ -17,11 +25,7 @@ class File extends Component {
               are already doing that. Although when combined with a design
               pattern like Flux, you can totally give up on an MVC framework for
               your client-side architecture and happily develop apps with just
-              React in conjunction with the Flux application architecture. React
-              encompasses some interesting concepts too like Virtual DOM,
-              uni-directional reactive data flow, etc. but don’t worry we’ll
-              discuss all those much later when you’re already comfortable with
-              the library and hacking your way through it.
+              React in conjunction with the Flux application architecture.
             </div>
             <div className="col-sm-4">
               React (also React.js or ReactJS) is a JavaScript library for
@@ -33,11 +37,7 @@ class File extends Component {
               are already doing that. Although when combined with a design
               pattern like Flux, you can totally give up on an MVC framework for
               your client-side architecture and happily develop apps with just
-              React in conjunction with the Flux application architecture. React
-              encompasses some interesting concepts too like Virtual DOM,
-              uni-directional reactive data flow, etc. but don’t worry we’ll
-              discuss all those much later when you’re already comfortable with
-              the library and hacking your way through it.
+              React in conjunction with the Flux application architecture.
             </div>
             <div className="col-sm-4">
               React (also React.js or ReactJS) is a JavaScript library for
@@ -49,11 +49,7 @@ class File extends Component {
               are already doing that. Although when combined with a design
               pattern like Flux, you can totally give up on an MVC framework for
               your client-side architecture and happily develop apps with just
-              React in conjunction with the Flux application architecture. React
-              encompasses some interesting concepts too like Virtual DOM,
-              uni-directional reactive data flow, etc. but don’t worry we’ll
-              discuss all those much later when you’re already comfortable with
-              the library and hacking your way through it.
+              React in conjunction with the Flux application architecture.
             </div>
           </div>
         </div>

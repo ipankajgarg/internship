@@ -3,85 +3,69 @@ export default [
     "id":"1",
     "folderName": "Folder name",
     "quantity": "5 items",
-    "type": "folder"
+    "type": "folder",
+    "value":"200",
+    "color":-50
   },
   {
     "id":"2",
     "folderName": "Folder name",
     "quantity": "5 items",
-    "type": "folder"
+    "type": "folder",
+    "value":"170",
+    "color":-30
   },
-  {
-      "id":"3",
-    "fileName": "Filename.zip",
-    "quantity": "5 items",
-    "type": "zipFile"
-  },
+
   {
       "id":"4",
     "folderName": "Folder name",
     "quantity": "5 items",
-    "type": "folder"
+    "type": "folder",
+    "value":"190",
+    "color":-80
   },
   {
       "id":"5",
     "folderName": "Folder name",
     "quantity": "5 items",
-    "type": "folder"
+    "type": "folder",
+    "value":"100",
+    "color":30
   },
   {
       "id":"6",
     "folderName": "Folder name",
     "quantity": "5 items",
-    "type": "folder"
+    "type": "folder",
+    "value":"150",
+    "color":15
   },
-  {
-      "id":"7",
-    "fileName": "Filename.zip",
-    "quantity": "5 items",
-    "type": "zipFile"
-  },
+
   {
       "id":"8",
     "folderName": "Folder name",
     "quantity": "5 items",
-    "type": "folder"
+    "type": "folder",
+    "value":"130",
+    "color":40
+
   },
   {
       "id":"9",
     "folderName": "Folder name",
     "quantity": "5 items",
-    "type": "folder"
+    "type": "folder",
+    "value":"80",
+    "color":70
   },
 
   {
       "id":"10",
     "folderName": "Folder name",
     "quantity": "5 items",
-    "type": "folder"
-  },
-  {
-      "id":"11",
-    "folderName": "Folder name",
-    "quantity": "5 items",
-    "type": "folder"
-  },
-  {
-      "id":"12",
-    "folderName": "Folder name",
-    "quantity": "5 items",
-    "type": "folder"
-  },
-  {
-      "id":"13",
-    "folderName": "Folder name",
-    "quantity": "5 items",
-    "type": "folder"
-  },
-  {
-      "id":"14",
-    "fileName": "Filename.zip",
-    "quantity": "5 items",
-    "type": "zipFile"
+    "type": "folder",
+    "value":"110",
+    "color":-100
   }
+
 ]

@@ -1,58 +1,75 @@
 import React, { Component } from "react";
-
+import { connect } from "react-redux";
+import { addedUser } from "../actions";
 class Header extends Component {
-  render() {
-    return (
-      <header id="header">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-2">
-              <div className="logo">
-                <div className="row">
-                  <div className="col-xs-6">
-                    <div className="image">
-                      <image src="../../images/elon-musk.jpg" />
-                    </div>
-                  </div>
-                  <div
-                    className="col-xs-6"
-                    style={{ paddingLeft: "0px", marginTop: "10px" }}
-                  >
-                    <div className="description">
-                      <span>Elon Musk</span>
+  state = { show: false };
+  componentWillMount() {
+    this.props.addedUser();
+  }
+  renderSection = () => {
+    if (this.state.show)
+      return (
+        <div className="show_hide">
+          <span style={{ fontWeight: "bold", fontSize: "13px" }}>Add User</span>
+          <form>
+            <label style={{ marginTop: "15px", fontSize: "12px" }}>
+              Add user
+            </label>
+            <input />
+          </form>
+        </div>
+      );
+  };
 
-                      <p>role of the user</p>
-                    </div>
-                  </div>
-                </div>
+  renderList = () => {
+    const users = this.props.loggedUser;
+    return users.map(user => {
+      return (
+        <li>
+          <img src={user.imageURL} />
+        </li>
+      );
+    });
+  };
+  render() {
+    console.log("logged", this.props.loggedUser);
+    return (
+      <div id="header">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-xs-6" style={{ textAlign: "right" }}>
+              <div>
+                <span>Collaboration</span>
               </div>
             </div>
-            <div
-              className="col-sm-4 col-sm-offset-2"
-              style={{ position: "relative" }}
-            >
-              <div className="input-box">
-                <input placeholder="search" />
-                <img src="../../images/search.png" />
+            <div className="col-xs-6" style={{ textAlign: "right" }}>
+              <div>
+                <ul>
+                  {this.renderList()}
+                  <li style={{ position: "relative" }}>
+                    <img
+                      onClick={() => {
+                        if (this.state.show) {
+                          this.setState({ show: false });
+                        } else this.setState({ show: true });
+                      }}
+                      src="../../images/plus.png"
+                    />
+
+                    {this.renderSection()}
+                  </li>
+                </ul>
               </div>
-            </div>
-            <div
-              className="col-sm-1 col-sm-offset-3"
-              style={{ marginTop: "10px" }}
-            >
-              <span
-                style={{
-                  fontSize: "12px",
-                  fontWeight: "bold"
-                }}
-              >
-                Show all v
-              </span>
             </div>
           </div>
         </div>
-      </header>
+      </div>
     );
   }
 }
-export default Header;
+function mapStateToProps(state) {
+  return {
+    loggedUser: state.Logged.loggedUser
+  };
+}
+export default connect(mapStateToProps, { addedUser })(Header);

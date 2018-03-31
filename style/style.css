@@ -9,81 +9,65 @@
   overflow: auto;
 }
 
-#header img {
+ul {
+  list-style: none;
+}
+#header .pull-right {
+  display: flex;
+  list-style: none;
+}
+#header li img {
   width: 100%;
   border-radius: 50%;
 }
-#header .logo span {
-  font-size: 13px;
-  font-weight: bold;
+#header li {
+  width: 10%;
+  margin: 0px 10px;
+  display: inline-block;
 }
-#header .logo p {
-  font-size: 8px;
-  color: lightgrey;
-}
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #f2f2f2;
-  opacity: 1; /* Firefox */
-}
-#header input {
-  width: 100%;
-  margin-top: 5px;
-  border-color: white;
-  border: none;
-  /* border-bottom: lightgray; */
-  /* border-bottom: 0px; */
-  box-shadow: 1pz;
-  border-bottom: 2px solid lightgray;
-  padding: 5px 20px;
-  color: #f2f2f2;
-}
-#header .input-box img {
-  width: 16px;
+#header .show_hide {
   position: absolute;
-  right: 20px;
-  top: 15px;
-}
-/* header */
-
-#container .icons i {
-  margin: 0px 20px;
-}
-#content .files_folder {
-  margin-top: 20px;
-}
-#content .files_folder ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-#content .files_folder ul li img {
-  width: 80%;
-}
-#content .files_folder ul li {
-  margin: 0px 50px 50px 0px;
-  list-style: none;
+  width: 250px;
+  height: 140px;
   background-color: white;
+  right: 15px;
+  top: 65px;
+  text-align: left;
+  padding-left: 21px;
+  padding-top: 15px;
+  border: 1px solid lightgray;
 }
-#content .files_folder ul li .image {
-  border: 1px solid lightgrey;
+#content ul li {
+  height: 150px;
+  width: 145px;
+  background-color: white;
+  display: inline-block;
+  margin: 20px 20px;
+  border: 1px solid red;
   text-align: center;
-
-  padding: 14px;
 }
-#content .files_folder ul li .description {
-  border: 1px solid lightgrey;
-  padding: 7px;
-  text-align: center;
+#content ul li span {
+  font-size: 12px;
 }
-#content .files_folder ul li span {
-  font-size: 13px;
-  font-weight: bold;
-  color: black;
-}
-#content .files_folder ul li p {
+#content ul li p {
   font-size: 10px;
-  color: lightgray;
+  margin-top: 30px;
 }
-$:hover {
-  text-decoration: none;
+#content ul li img {
+  width: 87%;
+}
+img:hover span {
+  display: none;
+}
+
+#content input {
+  border: none;
+  height: 140px;
+  width: 140px;
+  width: 140px;
+  overflow-x: scroll;
+}
+#content input:focus {
+  border: none;
+  outline: none;
 }
