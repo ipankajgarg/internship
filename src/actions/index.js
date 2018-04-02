@@ -41,6 +41,30 @@ export function addedUser() {
       });
   };
 }
+export function postList(user) {
+  return function(dispatch) {
+    axios
+      .patch("http://localhost:3000/users/" + user.id, { added: "true" })
+      .then(response => {
+        console.log("patch response", response);
+        dispatch({ type: "ADDED_USER", payload: response });
+      })
+      .catch(() => {
+        //if brand//show an error to the user
+        console.log("auth");
+      });
+  };
+}
+export function box() {
+  return {
+    type: "BOX"
+  };
+}
+export function usersList() {
+  return {
+    type: "USERSLIST"
+  };
+}
 // export function allUser() {
 //   return function(dispatch) {
 //     axios

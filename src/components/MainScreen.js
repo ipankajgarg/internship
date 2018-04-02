@@ -15,11 +15,21 @@ class MainScreen extends Component {
   changeState = () => {
     this.setState({ text: false });
   };
+  generateColor = () => {
+    var letters = "ABCDE".split("");
+    var color = "#";
+    for (var i = 0; i < 3; i++) {
+      color += letters[Math.floor(Math.random() * letters.length)];
+    }
+    return color;
+  };
   onSubmit = event => {
     event.preventDefault();
+
     this.props.postCards({
       title: "Internship stuff",
-      content: this.state.content
+      content: this.state.content,
+      color: this.generateColor()
     });
 
     this.setState({ content: "", text: true });
@@ -41,14 +51,15 @@ class MainScreen extends Component {
       </form>
     );
   };
-  shouldComponentUpdate(nextProps) {
-    return true;
-  }
+
   renderList = () => {
     console.log("array", this.props.cards);
     return this.props.cards.map(card => {
       return (
-        <li key={card.id}>
+        <li
+          style={{ borderColor: card.color, backgroundColor: card.color }}
+          key={card.id}
+        >
           <span>{card.title}</span>
           <p>{card.content}</p>
         </li>

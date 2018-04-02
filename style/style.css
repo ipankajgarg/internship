@@ -61,6 +61,27 @@ ul {
   padding-top: 15px;
   border: 1px solid lightgray;
 }
+#header .suggestion input {
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+.gray {
+  background-color: gray;
+}
+#header #create-list {
+  width: 90%;
+  margin: 0px;
+  border: 1px solid black;
+}
+#header #create-list span {
+  font-size: 9px;
+  background-color: gainsboro;
+  padding: 5px 8px 5px 5px;
+  margin: 0px 3px;
+  border-radius: 5px;
+}
 #content ul li {
   height: 150px;
   width: 145px;
